@@ -1,0 +1,357 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="A python developer's portfolio" />
+    <meta name="author" content="Amraoui Mohamed" />
+    <title>
+      Mohamed -
+      {% block subtitle %}
+        A python developer
+      {% endblock subtitle %}
+    </title>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" /> {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/unicons.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'frontend:home' %}">
+          {% comment %} <i class="uil uil-user"></i> {% endcomment %}
+          Mohamed
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <span data-hover="home">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <span data-hover="About">About</span>
+              </a>
+            </li>
+            <a href="#services" class="nav-link">
+              <span data-hover="services">Services</span>
+            </a>
+
+            <li class="nav-item">
+              <a href="#project" class="nav-link">
+                <span data-hover="Projects">Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#contact" class="nav-link"><span data-hover="Contact Me">Contact Me</span></a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav ml-lg-auto">
+            <div class="ml-lg-4">
+              <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                <i class="color-mode-icon"></i>
+                {% comment %} Color mode {% endcomment %}
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section class="home  full-screen d-lg-flex justify-content-center align-items-center"
+             id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+            <div class="about-text">
+              <small class="small-text">hey there, Welcome to <span class="mobile-block">my portfolio</span></small>
+              <h1 class="animated animated-text">
+                <span class="mr-2">I'm </span>
+                <div class="animated-info">
+                  <span class="animated-item">Mohamed </span>
+                  <span class="animated-item">A Web Developer</span>
+                  <span class="animated-item">A Web Scraper</span>
+                </div>
+              </h1>
+              <p>
+                Great to know you're here, lets start out success journey together
+              </p>
+              <div class="custom-btn-group mt-4">
+                <a href="#" class="btn mr-lg-2 custom-btn">
+                  <i class="uil uil-file-alt"></i>
+                  My Resume
+                </a>
+                {% comment %} <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-12">
+
+            <div class="about-image svg">
+              <img src="{% static 'images/undraw/developer.png' %}"
+                   class="img-fluid"
+                   alt="svg image" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about d-flex flex-column full-screen d-lg-flex justify-content-center align-items-center"
+             id="about">
+      <h2>
+        What to know about me?
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-12 col-12 d-flex align-items-center">
+            <div class="about-text">
+              <h2>
+                I'm
+                <span class="text-warning">Mohamed</span>
+              </h2>
+              <p>
+                I am a professional web developer specializing in Django backend development, web scraping,
+                and creating responsive, user-focused websites. Living in Algeria, I combine my expertise
+                in Python and Bootstrap to deliver efficient, high-quality solutions tailored to your needs.
+                <br />
+              </p>
+              <strong class='py-3' style='font-size:18px;'>
+                Let’s bring your ideas to life with creativity, precision, and passion. Start your journey with me today!
+              </strong>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+
+            <div class="about-image svg">
+              <img src="{% static 'images/undraw/developer-2.png' %}"
+                   class="img-fluid"
+                   alt="svg image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 text-center mx-auto col-12">
+            <div class="col-lg-8 mx-auto">
+              <h2>
+                My most recent projects
+              </h2>
+            </div>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="project d-flex flex-column">
+                  <div class="project-details d-flex flex-column py-2">
+                    <a class='text-start text-capitalize text-nowrap d-flex'>
+                      <i class="text-warning uil uil-link"></i>
+                      project 1
+                    </a>
+                    <img src="{% static 'images/project/project-image01.png' %}"
+                         class="img-fluid"
+                         alt="project image" />
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="project d-flex flex-column">
+                  <div class="project-details d-flex flex-column py-2">
+                    <a class='text-start text-capitalize text-nowrap d-flex'>
+                      <i class="text-warning uil uil-link"></i>
+                      project 1
+                    </a>
+                    <img src="{% static 'images/project/project-image01.png' %}"
+                         class="img-fluid"
+                         alt="project image" />
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="project d-flex flex-column">
+                  <div class="project-details d-flex flex-column py-2">
+                    <a class='text-start text-capitalize text-nowrap d-flex'>
+                      <i class="text-warning uil uil-link"></i>
+                      project 1
+                    </a>
+                    <img src="{% static 'images/project/project-image01.png' %}"
+                         class="img-fluid"
+                         alt="project image" />
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="project d-flex flex-column">
+                  <div class="project-details d-flex flex-column py-2">
+                    <a class='text-start text-capitalize text-nowrap d-flex'>
+                      <i class="text-warning uil uil-link"></i>
+                      project 1
+                    </a>
+                    <img src="{% static 'images/project/project-image01.png' %}"
+                         class="img-fluid"
+                         alt="project image" />
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="project d-flex flex-column">
+                  <div class="project-details d-flex flex-column py-2">
+                    <a class='text-start text-capitalize text-nowrap d-flex'>
+                      <i class="text-warning uil uil-link"></i>
+                      project 1
+                    </a>
+                    <img src="{% static 'images/project/project-image01.png' %}"
+                         class="img-fluid"
+                         alt="project image" />
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container d-flex flex-column">
+        <div class="row">
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="contact-info d-flex flex-column justify-content-between align-items-center py-4 px-lg-5">
+              <h2 class="mb-2 text-white">
+                Interested to work together? Let's talk
+              </h2>
+              <span>
+                <i class="uil uil-phone"></i>
+                +2136 97753472
+              </span>
+              <span class='d-flex text-white'>
+                <i class="uil uil-envelope"></i>
+                <a href="mailto:amraouimohamedtaher@gmail.com">amraouimohamedtaher@gmail.com</a>
+              </span>
+              <ul class="social-links d-flex">
+                <li>
+                  <a href="#"
+                     class="uil uil-dribbble"
+                     data-toggle="tooltip"
+                     data-placement="left"
+                     title="Dribbble"></a>
+                </li>
+                <li>
+                  <a href="#"
+                     class="uil uil-instagram"
+                     data-toggle="tooltip"
+                     data-placement="left"
+                     title="Instagram"></a>
+                </li>
+                <li>
+                  <a href="#"
+                     class="uil uil-youtube"
+                     data-toggle="tooltip"
+                     data-placement="left"
+                     title="Youtube"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text"
+                           class="form-control"
+                           name="name"
+                           placeholder="Your Name"
+                           id="name" />
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <input type="email"
+                           class="form-control"
+                           name="email"
+                           placeholder="Email"
+                           id="email" />
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message"
+                              rows="6"
+                              class="form-control"
+                              id="message"
+                              placeholder="Message"></textarea>
+                  </div>
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <p class="copyright-text text-center">
+              Copyright &copy; 2019 Company Name . All rights reserved
+            </p>
+            <p class="copyright-text text-center">
+              Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/Headroom.js' %}"></script>
+    <script src="{% static 'js/jQuery.headroom.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>
+</html>
